@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WiFi Manager</string>
+    <string name="app_title">WiFi Manager</string>
+    <string name="hello_world">Hello World</string>
+    <string name="prototype">Prototype</string>
+    <string name="search">Search</string>
+    <string name="btn_search">Search</string>
+    <string name="action_home">Home</string>
+    <string name="action_az">A - Z</string>
+    <string name="action_favorite">Favourite</string>
+    <string name="action_relocate">Relocate</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_all">All</string>
+    <string name="action_public">Public</string>
+    <string name="action_private">Private</string>
+    <string name="home_map">Map</string>
+    <string name="home_map_description">Shows WiFi strength superimposed onto a 2D map.</string>
+    <string name="home_compass">Compass</string>
+    <string name="home_compass_description">A compass which points toward the location where the WiFi signal is strongest.</string>
+    <string name="home_camera">Camera</string>
+    <string name="home_camera_description">Displays the WiFi strength superimposed on a camera display.</string>
+
+    <!-- Use \n for newline. -->
+    <string name="info_map">This is where the map information is displayed.\nSelect a WiFi network either on the map or by using the favourites or A - Z menu buttons.</string>
+    <string name="info_compass">Compass Info</string>
+    <string name="info_camera">Camera Info</string>
+    <string name="checkbox_compass">Compass</string>
+    <string name="checkbox_map">Heatmap</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_map">Map View</string>
+    <string name="title_activity_compass">Compass View</string>
+    <string name="title_activity_camera">Camera View</string>
+    <string name="title_activity_map_favorite">Favourites</string>
+    <string name="title_activity_map_az">A - Z</string>
+    <string name="title_activity_map_relocate">Relocate</string>
+    <string name="title_activity_map_green">Map View</string>
+    <string name="title_activity_camera_az">A - Z</string>
+    <string name="title_activity_compass_az">A - Z</string>
+    <string name="settings_favourites_colour">Favourites Colour: </string>
+    <string name="settings_public_colour">Public Colour: </string>
+    <string name="settings_private_colour">Private Colour: </string>
+    <string name="network_eduroam">eduroam\nPrivate\nSir Fred Schonell Drive</string>
+    <string name="network_wifi">Wifi\nPublic\n123 Fake Address</string>
+    <string name="network_distance"></string>
+    <string name="title_activity_compass_test">CompassTestActivity</string>
+    <string name="title_activity_camera_favourites">CameraFavourites</string>
+    <string name="title_activity_compass_favourites">CompassFavouritesActivity</string>
+
+</resources>

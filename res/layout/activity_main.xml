@@ -1,0 +1,111 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background" >
+     
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/home_map_container"
+        android:layout_width="match_parent"
+        android:layout_height="129dp"
+        android:layout_weight="134.12"
+        android:gravity="center_vertical"
+        android:onClick="mapClickEvent" >
+
+        <TextView
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/btn_map"
+            android:drawablePadding="10dip"
+            android:gravity="center"
+            android:padding="@dimen/home_icon_padding"
+            android:text="@string/home_map"
+            android:textColor="@color/text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:text="@string/home_map_description"
+            android:textColor="@color/text" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/line_ruler_colour" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="29.44"
+        android:gravity="center_vertical"
+        android:onClick="compassClickEvent" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="136dp"
+            android:layout_gravity="fill"
+            android:drawableBottom="@drawable/btn_compass"
+            android:drawablePadding="10dip"
+            android:gravity="center"
+            android:padding="@dimen/home_icon_padding"
+            android:text="@string/home_compass"
+            android:textColor="@color/text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="177dp"
+            android:layout_height="60dp"
+            android:text="@string/home_compass_description"
+            android:textColor="@color/text" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/line_ruler_colour" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:onClick="cameraClickEvent" >
+
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="132dp"
+            android:drawableBottom="@drawable/btn_camera"
+            android:drawablePadding="10dip"
+            android:gravity="center"
+            android:padding="@dimen/home_icon_padding"
+            android:text="@string/home_camera"
+            android:textColor="@color/text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:text="@string/home_camera_description"
+            android:textColor="@color/text" />
+
+    </LinearLayout>
+</LinearLayout>
+
+</ScrollView>

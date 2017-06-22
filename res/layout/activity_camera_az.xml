@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="@color/text"
+    tools:context=".MapActivity" >
+
+    <LinearLayout
+        android:id="@+id/sidebar_favorites"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/sidebar"
+        android:orientation="vertical"
+        android:textColor="@color/sidebar_txt" >
+
+        <LinearLayout
+            android:id="@+id/list_favorites_search_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <EditText
+                android:id="@+id/list_favorites_search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:descendantFocusability="beforeDescendants"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+                android:hint="@string/search"
+                android:singleLine="true" >
+            </EditText>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_search" />
+        </LinearLayout>
+
+        <!-- <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="loadHeatmap"
+            android:padding="25dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/network_eduroam"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/network_distance"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="loadHeatmap"
+            android:padding="25dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/network_wifi"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/network_distance"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>-->
+        
+        <ListView
+		    android:id="@+id/listview_camera_az"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:divider="#b5b5b5"
+        	android:dividerHeight="1dp"
+		    android:listSelector="@drawable/list_selector" /> 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/sidebar_border_width"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/sidebar_favorites"
+        android:background="@color/sidebar_border" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:baselineAligned="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/select_camera_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/search_type_active"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            android:onClick="filterAll" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/action_all"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/select_camera_public"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/search_type"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            android:onClick="filterPublic" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/action_public"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/select_camera_private"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/search_type"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            android:onClick="filterPrivate" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/action_private"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp" />
+
+</RelativeLayout>

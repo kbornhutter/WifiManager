@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+		android:shape="rectangle" >
+	<!-- <stroke
+        android:width="@dimen/sidebar_border_width"
+        android:color="@color/sidebar_border" /> -->
+	
+	<!-- <gradient
+		android:startColor="#E3f1f1f2"
+		android:centerColor="#E3e7e7e8"
+		android:endColor="#E3cfcfcf"
+		android:angle="270" /> -->
+   
+	<solid android:color="@color/sidebar_bg" />
+</shape>

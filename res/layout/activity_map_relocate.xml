@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:textColor="@color/text"
+    tools:context=".MapActivity" >
+    <EditText
+		android:id="@+id/list_relocate_search"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:descendantFocusability="beforeDescendants"
+	    android:focusableInTouchMode="true"
+		android:singleLine="true"
+		android:hint="@string/search"
+		android:ems="10" >
+	</EditText>
+    <!-- <ImageView
+        android:contentDescription="@string/prototype"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:scaleType="center"
+        android:tileMode="disabled"
+        android:src="@drawable/prototype_map_blank" />
+    
+    <LinearLayout
+        android:id="@+id/relocate_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/relocate_height"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:background="@drawable/sidebar" >
+
+        <EditText
+            android:id="@+id/reloate_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:descendantFocusability="beforeDescendants"
+            android:ems="10"
+            android:focusableInTouchMode="true"
+            android:hint="@string/search"
+            android:singleLine="true" >
+	   	</EditText>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:text="@string/btn_search" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_above="@+id/relocate_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sidebar_border_width"
+        android:background="@color/sidebar_border" >
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_below="@+id/relocate_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sidebar_border_width"
+        android:background="@color/sidebar_border" >
+    </LinearLayout> -->
+
+</RelativeLayout>

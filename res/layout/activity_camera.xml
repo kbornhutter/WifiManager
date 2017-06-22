@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_camera"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.wifimanagerprototype.CameraSurfaceView
+        android:id="@+id/cameraSurfaceView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+  <!--   <com.example.wifimanagerprototype.DrawSurfaceView
+        android:id="@+id/drawSurfaceView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" /> -->
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    
+    <CheckBox android:id="@+id/checkbox_compass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/checkbox_compass"
+        android:textColor="@color/text"
+        android:onClick="onCompassCheck"/>
+    </RelativeLayout>
+    
+    <ImageView
+        android:contentDescription="@string/prototype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:tileMode="disabled"
+        android:src="@drawable/btn_info"
+        android:onClick="loadInfo" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp" />
+    
+</FrameLayout>

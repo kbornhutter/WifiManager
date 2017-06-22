@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#000000</color>
+	<color name="title_text">#000000</color>
+	<color name="text">#E5E4E2</color>
+	<color name="line_ruler_colour">#CCCCCC</color>
+	<color name="transparent">#00000000</color>
+	
+	<color name="sidebar_bg">#000000</color>
+	<color name="sidebar_border">#6188F2</color>
+	<color name="sidebar_txt">#000000</color>
+	
+	<color name="type_btn_bg">#000000</color>
+	
+	<color name="list_select_txt">#000000</color>
+	<color name="list_select_hover_txt">#000000</color>
+	<color name="list_select_gradient_top">#000000</color>
+	<color name="list_select_gradient_center">#396DA5</color>
+	<color name="list_select_gradient_end">#396594</color>
+    
+	<!-- <color name="background">#2E2E2E</color>
+	<color name="title_text">#9BA8C7</color>
+	<color name="text">#FFFFFF</color>
+	<color name="line_ruler_colour">#DEDEDE</color>
+	<color name="transparent">#00000000</color>
+	
+	<color name="sidebar_bg">#2E2E2E</color>
+	<color name="sidebar_border">#5A92CE</color>
+	<color name="sidebar_txt">#000000</color>
+	
+	<color name="type_btn_bg">#FFFFFF</color>
+	
+	<color name="list_select_txt">#FFFFFF</color>
+	<color name="list_select_gradient_top">#5A92CE</color>
+	<color name="list_select_gradient_center">#396DA5</color>
+	<color name="list_select_gradient_end">#396594</color> -->
+	
+	<string-array name="colours">
+	    <item>Blue</item>
+	    <item>Green</item>
+	    <item>Red</item>
+	    <item>Purple</item>
+	    <item>Orange</item>
+	    <item>Yellow</item>
+	    <item>Pink</item>
+	</string-array>
+</resources>

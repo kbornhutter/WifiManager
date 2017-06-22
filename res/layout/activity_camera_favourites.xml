@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:textColor="@color/text"
+    tools:context=".CameraFavouritesActivity" >
+    
+    <LinearLayout
+        android:id="@+id/sidebar_favorites"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@drawable/sidebar"
+        android:textColor="@color/sidebar_txt" >
+		<LinearLayout
+		    android:id="@+id/list_favorites_search_bar"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="5dp" >
+			<EditText
+		        android:id="@+id/list_favorites_search"
+		        android:layout_weight="2"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:descendantFocusability="beforeDescendants"
+	    		android:focusableInTouchMode="true"
+		        android:singleLine="true"
+		        android:hint="@string/search"
+		        android:ems="10" >
+	    	</EditText>
+	    	<Button
+	    	    android:layout_weight="1"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:text="@string/btn_search" />
+		</LinearLayout>
+
+	    <ListView
+			android:id="@+id/listview_camera_favorite"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:divider="#b5b5b5"
+	      	android:dividerHeight="1dp"
+			android:listSelector="@drawable/list_selector" /> 
+			
+	</LinearLayout>
+
+</RelativeLayout>

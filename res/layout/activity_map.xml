@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:textColor="@color/text"
+    tools:context=".MapActivity" >
+    <!-- <ImageView
+        android:contentDescription="@string/prototype"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:scaleType="center"
+        android:tileMode="disabled"
+        android:src="@drawable/prototype_map_blank" /> -->
+
+    <!-- <ImageView
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="161dp"
+        android:background="@color/transparent"
+        android:contentDescription="@string/prototype"
+        android:gravity="center"
+        android:src="@drawable/prototype_pin"
+        android:tileMode="disabled"
+        android:onClick="loadHeatmap" /> -->
+        
+    <!-- <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_location"
+        class="com.google.android.gms.maps.SupportMapFragment" /> -->
+    
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.MapFragment" />
+    
+    <ImageView
+        android:contentDescription="@string/prototype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:tileMode="disabled"
+        android:src="@drawable/btn_info"
+        android:onClick="loadInfo" />
+
+</RelativeLayout>
